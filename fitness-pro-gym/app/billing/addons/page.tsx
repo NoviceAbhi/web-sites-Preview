@@ -8,7 +8,7 @@ import { getCurrentUser, type User } from '@/lib/auth'
 
 const AddOnsBillingPage = () => {
   const [user, setUser] = useState<User | null>(null)
-  const [selectedPlan, setSelectedPlan] = useState(null)
+  const [selectedPlan, setSelectedPlan] = useState<string | null>(null)
   const [activePlan, setActivePlan] = useState('Basic Plan - $29/month')
   const [selectedPlanPrice, setSelectedPlanPrice] = useState(0)
   const [activePlanPrice, setActivePlanPrice] = useState(29)
