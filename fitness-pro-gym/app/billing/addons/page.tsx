@@ -59,7 +59,7 @@ const AddOnsBillingPage = () => {
     }
   }, [])
 
-  const handlePayment = (e) => {
+  const handlePayment = (e: React.FormEvent) => {
     e.preventDefault()
     alert('Add-on purchased successfully!')
   }
