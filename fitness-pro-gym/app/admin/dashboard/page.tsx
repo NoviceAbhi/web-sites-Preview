@@ -40,6 +40,7 @@ import {
   type LiveTrackingData,
   type FeesData,
   type PlanTrackingData,
+  type HeaderTrackingData,
   type GymCapacityData,
   type FeesManagementData,
   type PlanTrackingManagementData
