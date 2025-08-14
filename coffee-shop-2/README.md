@@ -1,6 +1,6 @@
 # Roasted Dreams - Coffee Shop Website
 
-[![Live View](https://img.shields.io/badge/🌐_Live_View-Visit_Site-blue?style=for-the-badge&logo=vercel)](https://web-sites-preview-iexg-git-main-mr-novices-projects.vercel.app/)
+[![Live View](https://img.shields.io/badge/🌐_Live_View-Visit_Site-blue?style=for-the-badge&logo=vercel)](https://web-sites-preview-iexg-jalx5lce4-mr-novices-projects.vercel.app/)
 
 A modern, elegant coffee shop website built with Next.js 14, TypeScript, and Tailwind CSS.
 
