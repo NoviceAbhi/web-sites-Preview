@@ -4,11 +4,11 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ArrowLeft, CreditCard, Check } from 'lucide-react'
 import Button from '@/components/ui/Button'
-import { getCurrentUser } from '@/lib/auth'
+import { getCurrentUser, type User } from '@/lib/auth'
 
 const BillingPage = () => {
-  const [user, setUser] = useState(null)
-  const [selectedPlan, setSelectedPlan] = useState(null)
+  const [user, setUser] = useState<User | null>(null)
+  const [selectedPlan, setSelectedPlan] = useState<string | null>(null)
   const [activePlan, setActivePlan] = useState('Basic Plan - $29/month')
   const [selectedPlanPrice, setSelectedPlanPrice] = useState(0)
   const [activePlanPrice, setActivePlanPrice] = useState(29)
@@ -35,7 +35,7 @@ const BillingPage = () => {
     }
   }, [])
 
-  const handlePayment = (e) => {
+  const handlePayment = (e: React.FormEvent) => {
     e.preventDefault()
     alert('Payment processed successfully!')
   }
