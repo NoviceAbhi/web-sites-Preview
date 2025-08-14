@@ -36,6 +36,7 @@ import {
   deleteUser,
   resetManagementData,
   markPaymentAsPaid,
+  type Admin,
   type UserRegistrationLog,
   type LiveTrackingData,
   type FeesData,
@@ -47,7 +48,7 @@ import {
 } from '@/lib/admin-auth'
 
 const AdminDashboard = () => {
-  const [admin, setAdmin] = useState(null)
+  const [admin, setAdmin] = useState<Admin | null>(null)
   const [activeTab, setActiveTab] = useState('overview')
   const [userLogs, setUserLogs] = useState<UserRegistrationLog[]>([])
   const [trackingLogs, setTrackingLogs] = useState<LiveTrackingData[]>([])
