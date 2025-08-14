@@ -4,10 +4,10 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ArrowLeft, CreditCard, Check, AlertCircle } from 'lucide-react'
 import Button from '@/components/ui/Button'
-import { getCurrentUser } from '@/lib/auth'
+import { getCurrentUser, type User } from '@/lib/auth'
 
 const AddOnsBillingPage = () => {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState<User | null>(null)
   const [selectedPlan, setSelectedPlan] = useState(null)
   const [activePlan, setActivePlan] = useState('Basic Plan - $29/month')
   const [selectedPlanPrice, setSelectedPlanPrice] = useState(0)
