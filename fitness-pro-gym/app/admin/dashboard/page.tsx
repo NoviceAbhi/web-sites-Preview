@@ -58,7 +58,7 @@ const AdminDashboard = () => {
   const [capacityLogs, setCapacityLogs] = useState<GymCapacityData[]>([])
   const [feesManagementLogs, setFeesManagementLogs] = useState<FeesManagementData[]>([])
   const [planTrackingManagementLogs, setPlanTrackingManagementLogs] = useState<PlanTrackingManagementData[]>([])
-  const [analytics, setAnalytics] = useState(null)
+  const [analytics, setAnalytics] = useState<any>(null)
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedUser, setSelectedUser] = useState<UserRegistrationLog | null>(null)
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null)
