@@ -578,6 +578,23 @@ export const resetManagementData = () => {
   logPlanTrackingManagement()
 }
 
+// Mark payment as paid function
+export const markPaymentAsPaid = (paymentId: string): boolean => {
+  if (typeof window === 'undefined') return false
+  
+  try {
+    const feesLogs = getStoredFeesLogs()
+    const updatedFeesLogs = feesLogs.map(fee => 
+      fee.id === paymentId ? { ...fee, status: 'paid' as const } : fee
+    )
+    localStorage.setItem('feesLogs', JSON.stringify(updatedFeesLogs))
+    return true
+  } catch (error) {
+    console.error('Error marking payment as paid:', error)
+    return false
+  }
+}
+
 // Analytics functions
 export const getAdminAnalytics = () => {
   const allUsers = getAllUsersWithPlans()
