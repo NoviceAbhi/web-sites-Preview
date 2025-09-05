@@ -38,7 +38,7 @@ export default function Footer() {
             </motion.div>
             <p className="text-sm text-gray-300 mb-6 max-w-md">
               Creative developer and designer passionate about crafting digital experiences 
-              that inspire and engage. Let's build something amazing together.
+              that inspire and engage. Let&apos;s build something amazing together.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (

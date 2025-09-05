@@ -66,7 +66,7 @@ export default function Hero() {
           variants={itemVariants}
           className="text-3xl md:text-5xl font-bold mb-4"
         >
-          Hi, I'm{' '}
+          Hi, I&apos;m{' '}
           <span className="gradient-text">Davis</span>
         </motion.h1>
 
