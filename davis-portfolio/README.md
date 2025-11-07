@@ -2,6 +2,8 @@
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Website-blue?style=for-the-badge&logo=vercel)](https://davis-three.vercel.app/)
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Website-blue?style=for-the-badge&logo=vercel)](https://davis-three.vercel.app/)
+
 A modern, animated personal portfolio website built with Next.js, TypeScript, and Framer Motion.
 
 ## Features
